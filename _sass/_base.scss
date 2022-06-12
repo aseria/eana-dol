@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+
+@aseria
+jaeseon-choi
+/
+jaeseon-choi.github.io
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+jaeseon-choi.github.io/_sass/_base.scss
+@jaeseon-choi
+jaeseon-choi 디자인 검수내용수정
+Latest commit 0e7679d on 10 May 2016
+History
+1 contributor
+352 lines (318 sloc)  6.92 KB
+
+
 html,
 body {
     height: 100%;
@@ -9,7 +38,7 @@ body {
 }
 
 hr {
-    border-color: $theme-primary;
+    border-color: #f7cac9;
     border-width: 3px;
     max-width: 50px;
 }
@@ -20,10 +49,10 @@ hr.light {
 
 a {
     @include transition-all;
-    color: $theme-primary;
+    color:#f7cac9;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: darken(#f7cac9, 10%);
     }
 }
 
@@ -43,16 +72,16 @@ p {
 }
 
 .bg-primary {
-    background-color:#ff8f35;
+    background-color:#f7cac9;
 }
 
 .bg-dark {
-    background-color: #ff8f35;
+    background-color: #f7cac9;
     color: white;
 }
 
 .text-faded {
-    color: rgba(white, .7);
+    color: rgba(white, 1);
 }
 
 section {
@@ -138,9 +167,9 @@ aside {
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
+                color: #f7cac9;
                 &:hover {
-                    color: $theme-primary;
+                    color: #f7cac9;
                 }
             }
         }
@@ -155,7 +184,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('https://raw.githubusercontent.com/aseria/eana-doljanchi/master/img/header.JPG');
+    background-image: url('https://raw.githubusercontent.com/jaeseon-choi/jaeseon-choi.github.io/master/img/header.JPG');
     text-align: center;
     color: white;
     .header-content {
@@ -165,10 +194,12 @@ header {
         width: 100%;
         .header-content-inner {
             h1 {
+                font-size:21px !important;
                 font-weight: 700;
                 text-transform: uppercase;
-                margin-top: 0;
+                margin-top: 134px;
                 margin-bottom: 0;
+
             }
             hr {
                 margin: 30px auto;
@@ -231,7 +262,7 @@ header {
         color: white;
         opacity: 0;
         display: block;
-        background: rgba( $theme-primary, .9 );
+        background:rgba(247, 202, 201, 0.9);
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -286,7 +317,7 @@ header {
 
 // Bootstrap Overrides
 .text-primary {
-    color: $theme-primary;
+    color: #f7cac9;
 }
 
 .no-gutter > [class*='col-'] {
